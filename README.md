@@ -58,3 +58,33 @@ And that's it! you have successfully hosted a static website on AWS S3! In order
 ![2023-05-23 16_03_41-danialsquantombucket - S3 bucket](https://github.com/DEVOP-WITH-DANIAL/Danial-s-quantom-s3/assets/87901858/2d101aed-072f-4bed-a2f6-153fc50093d3)
 
 
+## Alternative solutions and why they were not considered for this project
+
+**Hosting the website on an EC2 instead**
+
+Using EC2 to host our website would have given us more control over our infrestructure and would have allowed us for more costomization which would have involved more setup and maintenance like configuring the web server and managing stability. For our case which is a simple static website, using an EC2 instance would be complex and time consuming.
+
+
+**Using Elastic Beanstalk**
+
+This service simplifies the deployment and management of the application. It manageas and provisionsour underlaying infrestructure automatically. But since our project is a simple static website, using Elastic Beanstalk would have been too much and its usually used for more complex apps which need scaling and more complicated configuration. 
+
+
+
+## Additional improvements 
+
+**below is a list of improvements which we can have consider for this project to make it a production grade website**
+
+1. Improved design: We can improve the looks of our website by adding CSS styles to make it more appealing to our audience.
+
+2. Domain name and SSL certificate: We can register a domain name and point it to our website. On top of that, we can obtain an SSL certificate to enable HTTPS access. This can be done by using tools such as **Route 53**, **AWS ACM**, and **cloudFront**
+
+3. Monitoring: We could setup monitoring by using tools like AWS cloudWatch or external tools like DataDog to track the website's performance and user behaviour. 
+
+4. Using CDN: Assuming our website is going to be global, we can consider integrating a content delivery network such as AWS CloudFront.
+
+5. Setting up CI/CD: Using a CI/CD tools such as AWS CodePipeline or exernal tools like CircleCi, we can automate deployment and streamline the development process. We could also add additional tools in our CI pipeline to check for security vulnerabilities in our code before they get merged. 
+
+6. Security considerations: applying additional security measures like setting up proper authentication and authorization mechanisms for users and engineers who use our assets could mitigate security breaches and data leaks. We could also set up AWS WAF to prevent any malicious attacks to our infrestructure.
+
+7. Scalibility and availability: assuming our website is going to expect to handle high traffic or requires high availability, we could design our infrestructure for scalibility and redundancy by using tools like Aws Auto scaling. 
