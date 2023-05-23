@@ -1,8 +1,8 @@
-**Danial Raeen Najad's website**
+# Danial Raeen Najad's website
 
-This is a simple statis website which is hosted on an AWS S3 bucket. To view the website, please use [this link](http://danialsquantombucket.s3-website-ap-southeast-2.amazonaws.com/).
+## This is a simple statis website which is hosted on an AWS S3 bucket. To view the website, please use [this link](http://danialsquantombucket.s3-website-ap-southeast-2.amazonaws.com/).
 
-**Replication Steps**
+### **Replication Steps**
 
 In order to replicate this website on youir own AWS envronment, please follow the steps below:
 
